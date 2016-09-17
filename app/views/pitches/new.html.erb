@@ -1,0 +1,11 @@
+<h2>New Pitch</h2>
+
+<%= form_for(@pitch) do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title %> <br />
+  <%= f.label :body %>
+  <%= f.text_area :body %> <br />
+  <%= f.label :status %>
+  <%= f.text_field :status %> <br />
+  <%= f.submit %>
+<% end %>
