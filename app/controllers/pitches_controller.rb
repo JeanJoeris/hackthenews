@@ -5,6 +5,7 @@ class PitchesController < ApplicationController
 
   def show
     @pitch = Pitch.find(params[:id])
+    @contacts = @pitch.contacts
   end
 
   def new
@@ -13,9 +14,8 @@ class PitchesController < ApplicationController
 
   def create
     @pitch = Pitch.new(pitch_params)
-    byebug
     if @pitch.save
-      redirect_to :show
+      redirect_to @pitch
     end
   end
 

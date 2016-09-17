@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  contact: one
+  pitch: one
+  status: MyString
+
+two:
+  contact: two
+  pitch: two
+  status: MyString
