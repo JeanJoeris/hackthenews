@@ -28,4 +28,12 @@ ActiveRecord::Schema.define(version: 20160917002626) do
     t.datetime "updated_at",           null: false
   end
 
+  create_table "pitches", force: :cascade do |t|
+    t.string   "title"
+    t.text     "body"
+    t.string   "status"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
 end
