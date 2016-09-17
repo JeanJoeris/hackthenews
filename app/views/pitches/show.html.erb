@@ -5,3 +5,9 @@
 </p>
 
 <h6><%= @pitch.status %></h6>
+
+<ul>
+  <% @contacts.each do |contact| %>
+    <%= link_to contact.name, user_contact_path(contact) %>
+  <% end %>
+</ul>
