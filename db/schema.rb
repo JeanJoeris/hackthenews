@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160917005606) do
+ActiveRecord::Schema.define(version: 20160917010613) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -21,7 +21,7 @@ ActiveRecord::Schema.define(version: 20160917005606) do
     t.integer  "rating"
     t.string   "phone_number"
     t.string   "email_address"
-    t.string   "type"
+    t.string   "category"
     t.string   "date_of_last_contact"
     t.text     "notes"
     t.datetime "created_at",           null: false
