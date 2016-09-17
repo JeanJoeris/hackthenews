@@ -1,6 +1,6 @@
 class PitchesController < ApplicationController
   def index
-
+    @pitches = Pitch.all
   end
 
   def show
@@ -13,6 +13,7 @@ class PitchesController < ApplicationController
 
   def create
     @pitch = Pitch.new(pitch_params)
+    byebug
     if @pitch.save
       redirect_to :show
     end
